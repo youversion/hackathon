@@ -7,7 +7,34 @@
 
 # Important Links
 
-* [Developer Hub App Registration](https://developers.youversion.com/platform/apps)
+### 1. Register an app in the Dev Portal
+* [Developer Hub App Registration](https://developers.youversion.com/)
+    * Click "Join the YouVersion Platform"
+    * Click "Sign in to YouVersion (top left box)
+    * Click "Manage Apps" (leftmost box)
+    * Click "New Application" button (top right)
+    * Your "App Id" is your public identifier to the API. Copy it
+
+ ### 2. Try hitting the APIs
+ Go to the [Dev Portal examples](https://developers.youversion.com/examples) (there's also a top-nav page).
+ Enter your App Id and try some cURL calls.
+
+ Endpoints and usage are also listed in this [llms.txt](https://api-dev.youversion.com/llms.txt)
+
+ NOTE: If you want to implement "Sign in with YouVersion", see below. A couple of the example cURLs require a "LAT", which is addressed there.
+
+ ### 3. Use the APIs in your projects
+ If you give an AI a cURL call, it can figure out how to implement it in your language. Try a prompt like:
+ 
+ ```Fetch Bible text in my app using my app id 1234abc and this curl call (paste both the call and response)```
+
+ ### 4. Sign in with YouVersion
+ Sensitive API calls require login, which produces a Limited Access Token (LAT). You can get a LAT to test with the above cURLs [from this example site](https://lifechurch.gitlab.io/youversion/apis/platform/yvp-login-flutter/) **MUST USE A YV STAGING ACCOUNT**
+
+ To implement "Sign in with YouVersion" in your project, you can use these [dev docs designed for humans and AIs](https://www.notion.so/yvproduct/Dev-Docs-Sign-In-w-YVP-Platform-Agnostic-DIY-SDK-1eaf1f2d1b9280108ffdf8c4f13e01a5?source=copy_link)
+
+That example site is a Flutter project you can look at here: <https://gitlab.com/lifechurch/youversion/apis/platform/yvp-login-flutter>
+ 
 
 # FAQ
 

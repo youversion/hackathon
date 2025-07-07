@@ -12,6 +12,7 @@
 * [YouVersion on GitHub](https://github.com/youversion)
 * [LLM SDK instructions](https://api-dev.youversion.com/llms.txt)
 * [Create a staging account](https://staging.bible.com)
+* [OpenAPI spec](https://gitlab.com/lifechurch/youversion/apis/platform/transformers/-/blob/main/spec/openapi.yaml?ref_type=heads)
 
 # Important Steps to Start Hackathon Week
 

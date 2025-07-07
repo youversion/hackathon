@@ -10,6 +10,8 @@
 * [Developer Hub](https://developers.youversion.com/)
 * [Platform Team Liaisons](https://docs.google.com/document/d/1UF0w_MFoGCEhZLhI1OFI7kYtJlaSqY0k_HhhgU1iX-M/edit?usp=sharing)
 * [YouVersion on GitHub](https://github.com/youversion)
+* [LLM SDK instructions](https://api-dev.youversion.com/llms.txt)
+* [Create a staging account](https://staging.bible.com)
 
 # Important Steps to Start Hackathon Week
 
@@ -49,6 +51,8 @@ That example site is a Flutter project you can look at here: <https://gitlab.com
 * What state are the SDKs in?
     > The Swift SDK is in a decent state for usage. We haven't spent the same time with the Flutter SDK. There is also a Javascript SDK available for usage.
 * What is a LAT?
-    > It is a "Limited Access Token". It takes your YouVersion OAuth token and limits the resources it can access. It's essentially the same concept as OAuth scopes. Just a custom implementation rolled a little different. For calls that need user authentication you can add the LAT to the `X-App-Id` header to the API request.
+    > It is a "Limited Access Token". It takes your YouVersion OAuth token and limits the resources it can access. It's essentially the same concept as OAuth scopes. Just a custom implementation rolled a little different. For calls that need user authentication you can add the LAT to the `X-App-Id` header to the API request and remember to use your staging username & password for testing.
 * What is a "language range"?
     > In our newest API standards, we are attempting to encapsulate more industry standards in a way that will allow us to scale to every language in the world! Our architecture team has written up [some excellent documentation](https://www.notion.so/yvproduct/Locales-Language-Tags-3e9cd9017f44421e865506e8252f8126?source=copy_link) for us. But if you don't want to read and learn all that right now the TL;DR is that you can just send the old language tags you are used to sending in the `language_ranges` query parameter.
+* Why are the APIs versioned weird?
+    > Well, we try to follow the Google API Design Gudie as closely as possible. Over the years it has changed and we've also changed to more closely align with the documented standards. As part of Platform we decided to align stricly with the design guide's way of versioning. Why not v5 then you ask? Well, we may still end up at v5 which is a disucssion being had with staff level API engineers.
